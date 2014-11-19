@@ -1,0 +1,2349 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"to_",
+				"to_s  (function)"
+			],
+			[
+				"profile",
+				"profile_attributes"
+			],
+			[
+				"skill",
+				"skills_attributes"
+			],
+			[
+				"comp",
+				"company_types_selected"
+			],
+			[
+				"skills",
+				"skills_selected"
+			],
+			[
+				"sign",
+				"signedIn"
+			],
+			[
+				"salar",
+				"salary_max"
+			],
+			[
+				"end",
+				"end_date"
+			],
+			[
+				"create",
+				"create_application"
+			],
+			[
+				"candidate",
+				"candidate_id"
+			],
+			[
+				"ng-bin",
+				"ng-bind-html	AngularJS"
+			],
+			[
+				"remote",
+				"remote_true"
+			],
+			[
+				"nee",
+				"needs_visa_true"
+			],
+			[
+				"prof",
+				"profile_attributes"
+			],
+			[
+				"company",
+				"company_attributes"
+			],
+			[
+				"compa",
+				"company_name"
+			],
+			[
+				"addre",
+				"address_hash"
+			],
+			[
+				"assi",
+				"assign_attributes"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"ass",
+				"assign_attributes"
+			],
+			[
+				"random",
+				"random_int"
+			],
+			[
+				"sk",
+				"skills_selected"
+			],
+			[
+				"prox",
+				"proxySnippet"
+			],
+			[
+				"$loca",
+				"$locationProvider	AngularJS"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"job",
+				"job_requirements"
+			],
+			[
+				"request",
+				"requestCredentials"
+			],
+			[
+				"word",
+				"wordwithnumber"
+			],
+			[
+				"sess",
+				"sessionForm"
+			],
+			[
+				"jobs",
+				"jobsGrid"
+			],
+			[
+				"sala",
+				"salary_min"
+			],
+			[
+				"search",
+				"search_params"
+			],
+			[
+				"state",
+				"stateParams"
+			],
+			[
+				"che",
+				"checkbox-inline	BootstrapClass"
+			],
+			[
+				"fallback",
+				"fallback_to_devise"
+			],
+			[
+				"authentic",
+				"authentication_token"
+			],
+			[
+				"signed",
+				"signedOut"
+			],
+			[
+				"get",
+				"getCurrentUser"
+			],
+			[
+				"sign_",
+				"sign_in"
+			],
+			[
+				"cookie",
+				"cookieKey"
+			],
+			[
+				"remem",
+				"remember_me_token"
+			],
+			[
+				"user_",
+				"user_session"
+			],
+			[
+				"pdf",
+				"pdf_reader"
+			],
+			[
+				"other",
+				"others"
+			],
+			[
+				"genera",
+				"general_payroll"
+			],
+			[
+				"validate",
+				"validateForm"
+			],
+			[
+				"chec",
+				"check_terms_conditions"
+			],
+			[
+				"kpli",
+				"kpliKeyPeopleService"
+			],
+			[
+				"kpli_",
+				"kpli_key_people"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"subsidiaries",
+				"subsidiaries_explain"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"maili",
+				"mailing_address"
+			],
+			[
+				"revenu",
+				"revenue_percentage"
+			],
+			[
+				"acor",
+				"acord_property"
+			],
+			[
+				"admin",
+				"admin_form_path"
+			],
+			[
+				"epli_pro",
+				"epli_procedures_complaints"
+			],
+			[
+				"empl",
+				"epli_employees_table"
+			],
+			[
+				"emplo",
+				"epli_employees_tables"
+			],
+			[
+				"total",
+				"total_assets"
+			],
+			[
+				"curren",
+				"current_liabilities"
+			],
+			[
+				"long",
+				"long_term_debt"
+			],
+			[
+				"d_o",
+				"d_o_form"
+			],
+			[
+				"pdft",
+				"pdftk"
+			],
+			[
+				"read",
+				"read_field"
+			],
+			[
+				"fiscal",
+				"fiscal_year_field_names"
+			],
+			[
+				"read_c",
+				"read_checkboxes"
+			],
+			[
+				"wor",
+				"workers"
+			],
+			[
+				"worker",
+				"workersDisability"
+			],
+			[
+				"enabl",
+				"enabled_steps"
+			],
+			[
+				"Piep",
+				"PipedriveIntegration"
+			],
+			[
+				"epli_emplo",
+				"epli_employees_table_recent"
+			],
+			[
+				"epl",
+				"epli_other_state_locations"
+			],
+			[
+				"loca",
+				"locations_text"
+			],
+			[
+				"read_check",
+				"read_checkbox"
+			],
+			[
+				"epli",
+				"epli_employees_table_"
+			],
+			[
+				"sha",
+				"shareholder"
+			],
+			[
+				"conta",
+				"contact_names"
+			],
+			[
+				"do_s",
+				"d_o_shareholder"
+			],
+			[
+				"read_",
+				"read_fields"
+			],
+			[
+				"check",
+				"checkboxes"
+			],
+			[
+				"field",
+				"field_name"
+			],
+			[
+				"street",
+				"street_address"
+			],
+			[
+				"templa",
+				"template_path"
+			],
+			[
+				"templ",
+				"template_path"
+			],
+			[
+				"add",
+				"additional"
+			],
+			[
+				"foud",
+				"foundershield"
+			],
+			[
+				"html",
+				"html_link"
+			],
+			[
+				"remove",
+				"removeAttachment"
+			],
+			[
+				"bui",
+				"build_associations"
+			],
+			[
+				"update",
+				"update_attributes"
+			],
+			[
+				"confirm",
+				"confirmation_sent_at"
+			],
+			[
+				"render",
+				"render_error"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"unsu",
+				"user:unsubmitted_form_reminder"
+			],
+			[
+				"uncon",
+				"days_unconfirmed"
+			],
+			[
+				"rese",
+				"resend_confirmation_instructions"
+			],
+			[
+				"day",
+				"days_ago"
+			],
+			[
+				"market_sec",
+				"market_sectors"
+			],
+			[
+				"marke",
+				"market_sector_options"
+			],
+			[
+				"PD",
+				"PD_PERSON_POSITION_KEY"
+			],
+			[
+				"PD_",
+				"PD_DEAL_REFERRAL_KEY"
+			],
+			[
+				"file",
+				"fileupload"
+			],
+			[
+				"resor",
+				"resource"
+			],
+			[
+				"has_",
+				"has_unsubmitted_forms"
+			],
+			[
+				"form",
+				"forms"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"isnuran",
+				"insurance_certificate"
+			],
+			[
+				"new",
+				"new_attachments"
+			],
+			[
+				"prog",
+				"progressHidden"
+			],
+			[
+				"atta",
+				"attachments"
+			],
+			[
+				"attach",
+				"attachment"
+			],
+			[
+				"elevator",
+				"elevator_pitch"
+			],
+			[
+				"Ofi",
+				"Officers"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/fpc.sublime-build",
+	"command_palette":
+	{
+		"height": 351.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"javasc ",
+				"Javascript Beautify"
+			],
+			[
+				"open file",
+				"Git: Open Modified Files"
+			],
+			[
+				"lowerca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"block",
+				"Toggle Block Comment"
+			],
+			[
+				"comen",
+				"Toggle Comment"
+			],
+			[
+				"beua",
+				"HTMLBeautify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sett user",
+				"Preferences: Settings - User"
+			],
+			[
+				"inst",
+				"Bower: Install"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"migra",
+				"Migrations list"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"block co",
+				"Toggle Block Comment"
+			],
+			[
+				"sett",
+				"Preferences: Settings - Default"
+			],
+			[
+				"html be",
+				"HTMLBeautify"
+			],
+			[
+				"javasc",
+				"Javascript Beautify"
+			],
+			[
+				"ruby",
+				"BeautifyRuby"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"rene",
+				"File: Rename"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"migra ",
+				"Migrations list"
+			],
+			[
+				"snake",
+				"Convert Case: snake_case"
+			],
+			[
+				"synt angul",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"synt html",
+				"Set Syntax: HTML"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"beaut",
+				"BeautifyRuby"
+			],
+			[
+				"BEAU",
+				"BeautifyRuby"
+			],
+			[
+				"BEAUTI",
+				"BeautifyRuby"
+			],
+			[
+				"renma",
+				"File: Rename"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"renm",
+				"File: Rename"
+			],
+			[
+				"migr",
+				"Migrations list"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"synt javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"consol",
+				"Set Syntax: R Console"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"java",
+				"Javascript Beautify"
+			],
+			[
+				"javas",
+				"Javascript Beautify"
+			],
+			[
+				"mig ",
+				"Migrations list"
+			],
+			[
+				"mig ra",
+				"Migrations list"
+			],
+			[
+				"migrat",
+				"Migrations list"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"come",
+				"Toggle Comment"
+			],
+			[
+				"path",
+				"File: Copy Path From Project"
+			],
+			[
+				"synta rb",
+				"Set Syntax: Ruby"
+			],
+			[
+				"synt bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"open",
+				"Sublime Files: Open Navigator"
+			],
+			[
+				"bea",
+				"Javascript Beautify"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"renme",
+				"File: Rename"
+			],
+			[
+				"lorem i",
+				"LoremIpsum: (200) stick shake"
+			],
+			[
+				"javac",
+				"Javascript Beautify"
+			],
+			[
+				" om",
+				"Toggle Comment"
+			],
+			[
+				"syntax bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"sett us",
+				"Preferences: Settings - User"
+			],
+			[
+				"sett u",
+				"Preferences: Settings - User"
+			],
+			[
+				"renmae",
+				"File: Rename"
+			],
+			[
+				"commn",
+				"Toggle Comment"
+			],
+			[
+				"dekete",
+				"FindKeyConflicts: All Key Maps to Buffer"
+			],
+			[
+				"ommen",
+				"Toggle Comment"
+			],
+			[
+				"MENU",
+				"View: Toggle Menu"
+			],
+			[
+				"UPPE",
+				"Convert Case: Upper Case"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"renae",
+				"File: Rename"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"pat",
+				"File: Copy Path"
+			],
+			[
+				"synt java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bloc",
+				"Toggle Block Comment"
+			],
+			[
+				"PATH",
+				"File: Copy Path From Project"
+			],
+			[
+				"beau ",
+				"Javascript Beautify"
+			],
+			[
+				"RENAME",
+				"File: Rename"
+			],
+			[
+				"COMMEN",
+				"Toggle Comment"
+			],
+			[
+				"remo pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (200) stick shake"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"synt js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bs3btngr",
+				"Snippet: bs3-button-group"
+			],
+			[
+				"copy pa",
+				"File: Copy Path as URI"
+			],
+			[
+				"beaut ",
+				"Javascript Beautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"cokmme",
+				"Toggle Block Comment"
+			],
+			[
+				"beaui",
+				"BeautifyRuby"
+			],
+			[
+				"function",
+				"Snippet: Function"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new fi",
+				"File: New File Relative to Current View"
+			],
+			[
+				"javasc b",
+				"Javascript Beautify"
+			],
+			[
+				"beatu",
+				"Javascript Beautify"
+			],
+			[
+				"javasc be",
+				"Javascript Beautify"
+			],
+			[
+				"deeke",
+				"Coffee: Display Lexer Tokens"
+			],
+			[
+				"bs3 se",
+				"Snippet: bs3-select"
+			],
+			[
+				"bs3 inp tex",
+				"Snippet: bs3-input-text"
+			],
+			[
+				"bs3 chec",
+				"Snippet: bs3-input-checkbox"
+			],
+			[
+				"bs3labe",
+				"Snippet: bs3-label"
+			],
+			[
+				"bs3tex",
+				"Snippet: bs3-input-text"
+			],
+			[
+				"bs3 ino",
+				"Snippet: bs3-input-radio"
+			],
+			[
+				"BEAUT ",
+				"HTMLBeautify"
+			],
+			[
+				"bower s",
+				"Bower: Discover packages"
+			],
+			[
+				"BEAUT",
+				"BeautifyRuby"
+			],
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"javas beau",
+				"Javascript Beautify"
+			],
+			[
+				"delee",
+				"File: Delete"
+			],
+			[
+				"synt ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"beauti",
+				"BeautifyRuby"
+			],
+			[
+				"beau ruby ",
+				"BeautifyRuby"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"block com",
+				"Toggle Block Comment"
+			],
+			[
+				"insta",
+				"Bower: Install"
+			],
+			[
+				"conso",
+				"Set Syntax: R Console"
+			],
+			[
+				"isntall",
+				"Bower: Install"
+			],
+			[
+				"diff tool",
+				"Git: Diff Tool All"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"filedi",
+				"FileDiffs: Menu"
+			],
+			[
+				"sett def",
+				"Preferences: Settings - Default"
+			],
+			[
+				"java ",
+				"Javascript Beautify"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/sergio/code/meanjs-interview-manager"
+	],
+	"file_history":
+	[
+		"/home/sergio/code/meanjs-interview-manager/node_modules/karma-phantomjs-launcher/node_modules/phantomjs/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js",
+		"/home/sergio/code/meanjs-interview-manager/public/lib/jquery/src/manipulation/var/rcheckableType.js",
+		"/home/sergio/code/meanjs-interview-manager/public/lib/angular-ui-router/CHANGELOG.md",
+		"/home/sergio/code/meanjs-interview-manager/node_modules/forever/node_modules/cliff/examples/put-rows-colors.js",
+		"/home/sergio/code/meanjs-interview-manager/node_modules/forever/node_modules/cliff/examples/put-rows.js",
+		"/home/sergio/code/meanjs-interview-manager/node_modules/karma/node_modules/source-map/build/prefix-utils.jsm",
+		"/home/sergio/code/meanjs-interview-manager/Procfile",
+		"/home/sergio/code/meanjs-interview-manager/public/modules/users/views/settings/change-password.client.view.html",
+		"/home/sergio/code/meanjs-interview-manager/public/modules/users/services/authentication.client.service.js",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/_results.html",
+		"/home/sergio/code/tp/ng-app/app/scripts/services/job.js",
+		"/home/sergio/code/tp/ng-app/app/views/_public_home.html",
+		"/home/sergio/code/tp/ng-app/package.json",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/users.js",
+		"/home/sergio/code/tp/public/views/transactions/index.html",
+		"/home/sergio/code/tp/app/models/user.rb",
+		"/home/sergio/code/tp/app/models/transaction.rb",
+		"/home/sergio/code/tp/app/controllers/api/transactions_controller.rb",
+		"/home/sergio/code/tp/ng-app/bower_components/bootstrap/less/mixins/table-row.less",
+		"/home/sergio/code/tp/tp.sublime-project",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-google-cdn/node_modules/bower/node_modules/mout/object/fillIn.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/LICENSE",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-google-cdn/node_modules/bower/node_modules/mout/date/isLeapYear.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/lib/hacks/border-image.js",
+		"/home/sergio/code/tp/ng-app/bower.json",
+		"/home/sergio/code/tp/Gemfile",
+		"/home/sergio/code/tp/config/deploy.rb",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/index.html",
+		"/home/sergio/code/tp/Capfile",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/candidates.js",
+		"/home/sergio/code/tp/ng-app/Gruntfile.js",
+		"/home/sergio/code/Gruntfile.js",
+		"/home/sergio/archivos.pas",
+		"/home/sergio/Dropbox/sublime-text-3/Packages/User/fpc.sublime-build",
+		"/home/sergio/code/tp/ng-app/app/index.html",
+		"/home/sergio/code/tp/app/models/job.rb",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/jobs.js",
+		"/home/sergio/code/tp/lib/tasks/auto_annotate_models.rake",
+		"/home/sergio/code/tp/ng-app/bower_components/angular-payments/src/module.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-google-cdn/node_modules/bower/node_modules/graceful-fs/test/max-open.js",
+		"/home/sergio/code/tp/app/controllers/api/messages_controller.rb",
+		"/home/sergio/code/tp/ng-app/app/views/users/_company_profile.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/_candidate_profile.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/_profile_positions.html",
+		"/home/sergio/code/tp/ng-app/app/styles/stilearn/stilearn.scss",
+		"/home/sergio/code/tp/app/helpers/application_helper.rb",
+		"/home/sergio/code/tp/config/application.rb",
+		"/home/sergio/code/tp/ng-app/app/scripts/application.js",
+		"/home/sergio/code/tp/ng-app/node_modules/karma/node_modules/http-proxy/examples/http/proxy-https-to-http.js",
+		"/home/sergio/code/tp/app/models/company.rb",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/common.js",
+		"/home/sergio/code/tp/app/controllers/api/conversations_controller.rb",
+		"/home/sergio/code/tp/ng-app/app/views/_company_home.html",
+		"/home/sergio/code/tp/ng-app/app/views/_candidate_home.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/edit.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/edit_profile.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/new.html",
+		"/home/sergio/code/tp/ng-app/app/views/users/registration_success.html",
+		"/home/sergio/code/tp/ng-app/app/views/404.html",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/new.html",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/edit.html",
+		"/home/sergio/code/tp/ng-app/app/scripts/routes.js",
+		"/home/sergio/code/tp/ng-app/app/views/conversations/show.html",
+		"/home/sergio/code/tp/config/routes.rb",
+		"/home/sergio/code/tp/ng-app/app/views/conversations/index.html",
+		"/home/sergio/code/tp/ng-app/app/views/candidates/show.html",
+		"/home/sergio/code/tp/ng-app/app/views/candidates/index.html",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_underscore/index.html",
+		"/home/sergio/code/tp/ng-app/node_modules/karma/node_modules/useragent/index.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/user-timing.json",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-convenience-methods.js",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/conversations.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-svgmin/node_modules/chalk/node_modules/strip-ansi/index.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-google-cdn/node_modules/bower/node_modules/inquirer/node_modules/cli-color/node_modules/es5-ext/string/#/code-point-at/index.js",
+		"/home/sergio/code/tp/ng-app/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/channel-messaging.json",
+		"/home/sergio/code/tp/app/views/mailboxer/message_mailer/new_message_email.html.erb",
+		"/home/sergio/code/tp/app/views/api/jobs/_job.json.jbuilder",
+		"/home/sergio/code/tp/app/models/job_skill.rb",
+		"/home/sergio/code/tp/app/controllers/api/jobs_controller.rb",
+		"/home/sergio/code/tp/ng-app/app/scripts/directives/datepickerpopup.js",
+		"/home/sergio/code/tp/config/database.yml",
+		"/home/sergio/code/tp/app/models/position.rb",
+		"/home/sergio/code/tp/ng-app/bower_components/angular-strap/dist/modules/parse-options.js",
+		"/home/sergio/code/tp/config/deploy/production.rb",
+		"/home/sergio/code/tp/app/models/candidate.rb",
+		"/home/sergio/code/tp/config/initializers/devise_token_auth.rb",
+		"/home/sergio/.vimrc",
+		"/home/sergio/.bashrc",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/header.js",
+		"/home/sergio/code/tp/ng-app/app/scripts/services/conversation.js",
+		"/home/sergio/code/tp/ng-app/app/scripts/controllers/home.js",
+		"/home/sergio/code/tp/ng-app/.jshintrc",
+		"/home/sergio/code/tp/ng-app/app/views/home.html",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/show.html",
+		"/home/sergio/code/tp/ng-app/bower_components/jquery/src/var/toString.js",
+		"/home/sergio/code/tp/test/policies/api/jobs_policy_test.rb",
+		"/home/sergio/code/tp/ng-app/app/views/candidates/_search.html",
+		"/home/sergio/code/tp/ng-app/app/views/jobs/_search.html",
+		"/home/sergio/code/tp/ng-app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_breadcrumbs.scss",
+		"/home/sergio/code/tp/ng-app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_border-radius.scss",
+		"/home/sergio/code/tp/ng-app/bower_components/angular-bootstrap-show-errors/bower.json",
+		"/home/sergio/code/tp/ng-app/bower_components/jquery/src/var/hasOwn.js",
+		"/home/sergio/code/tp/ng-app/bower_components/angular-bootstrap-show-errors/src/showErrors.coffee",
+		"/home/sergio/code/tp/db/schema.rb",
+		"/home/sergio/code/tp/ng-app/app/views/partials/_skills.html",
+		"/home/sergio/code/tp/.ruby-gemset",
+		"/home/sergio/code/tp/app/views/api/candidates/show.json.jbuilder",
+		"/home/sergio/code/tp/ng-app/app/views/candidates/_results.html",
+		"/home/sergio/code/tp/app/views/api/candidates/_candidate_profile.json.jbuilder",
+		"/home/sergio/code/tp/app/views/api/candidates/_candidate.json.jbuilder",
+		"/home/sergio/code/tp/app/views/api/users/current.json.jbuilder",
+		"/home/sergio/code/tp/app/views/api/users/update.json.jbuilder",
+		"/home/sergio/code/tp/app/controllers/api/candidates_controller.rb",
+		"/home/sergio/code/tp/ng-app/bower_components/ng-file-upload/angular-file-upload-shim.js",
+		"/home/sergio/code/tp/app/models/candidate_skill.rb",
+		"/home/sergio/code/tp/test/models/candidate_ae_product_test.rb",
+		"/home/sergio/code/tp/app/models/candidate_profile.rb",
+		"/home/sergio/code/tp/ng-app/bower_components/fontawesome/less/fixed-width.less",
+		"/home/sergio/code/tp/ng-app/bower_components/fontawesome/fonts/fontawesome-webfont.svg",
+		"/home/sergio/code/tp/ng-app/bower_components/es5-shim/component.json",
+		"/home/sergio/code/tp/config/initializers/omniauth.rb",
+		"/home/sergio/code/tp/ng-app/app/views/companies/index.html",
+		"/home/sergio/code/tp/app/models/company_profile.rb",
+		"/home/sergio/code/tp/ng-app/app/views/sessions/new.html",
+		"/home/sergio/code/tp/ng-app/app/views/candidates/list.html",
+		"/home/sergio/code/tp/ng-app/app/views/_sidebar.html",
+		"/home/sergio/code/tp/ng-app/bower_components/angular-truncate/demo/index.html",
+		"/home/sergio/code/tp/ng-app/app/views/sessions/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"",
+			"./test",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"</div>",
+			"<div ",
+			"modal",
+			"\">",
+			"<div",
+			"buy",
+			"log",
+			"boots",
+			"grunt",
+			",",
+			"usemin",
+			"filerev",
+			"png",
+			"link",
+			" ",
+			"console",
+			"aclonica",
+			"positionForm",
+			"update",
+			"sass",
+			"colors",
+			"2.26",
+			"error",
+			"create",
+			"br",
+			"];\n",
+			"ui-vi",
+			"image_url",
+			"ng-if=\"isCompany\"",
+			"pull-right ",
+			"right ",
+			".list",
+			"hr",
+			" pull-right",
+			"edit",
+			"well",
+			"silloption",
+			"content",
+			"candidate_i",
+			"SendMessageCtrl",
+			"option",
+			"c_type",
+			"type",
+			"br",
+			"todo:",
+			"skills_selected",
+			"profile.sf_products_attributes",
+			"ui-sele",
+			"TODO: ",
+			"TODO: Who",
+			"TODO: ",
+			"span",
+			"onFileSelect",
+			"avatar",
+			"if ",
+			".length === 0",
+			"sf_products_attributes",
+			" || [{}]",
+			"\n            ",
+			"skills_attributes || [{}];\n",
+			" || [{}];",
+			"||=",
+			"|| =",
+			"|| )",
+			"$scope.add",
+			"skills_attributes",
+			"skill_attr",
+			"cwd",
+			"bower.json",
+			"bower",
+			".26",
+			"sf_years",
+			"float",
+			"0",
+			" :default =>",
+			"=> ",
+			":default =>",
+			"users.edit",
+			"users.profile",
+			"email-confirmation-success",
+			"');\n",
+			"please edit",
+			"accoun settin",
+			"$alert",
+			"Update",
+			"full_name",
+			"full?name",
+			"goodbye",
+			"godbye",
+			"logout-success",
+			"success",
+			"scope.user",
+			"$auth.",
+			"signedin",
+			"$auth.",
+			".signedin",
+			">",
+			"Candidate dashboard",
+			"candidates",
+			"right",
+			"close",
+			"25",
+			"2.25",
+			".25",
+			"jshi",
+			"model=\"profile",
+			"user.profile_attributes",
+			"0",
+			"user.profile_attributes",
+			"data.profile_attributes",
+			"start_date",
+			"there was an error",
+			"omnia",
+			"omniaut",
+			"callback",
+			"omniauth/linkedin/callba",
+			"checkNotifications",
+			"app.twentypine.com",
+			"app.twe",
+			"app.foun",
+			"first_name",
+			"first_name}",
+			"signedin",
+			"p",
+			"h5",
+			"scope",
+			"textarea",
+			".show"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"form-group",
+			"col-lg-",
+			"col-sm-",
+			"col-lg-",
+			"col-xl-",
+			"col-sm-",
+			"",
+			"-md-",
+			"-md",
+			"d_o_shareholders",
+			"'",
+			"attachments",
+			"Attachments",
+			"Attachment"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 181.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 96.0
+	},
+	"output.settings_documentation_panel":
+	{
+		"height": 0.0
+	},
+	"output.textarea":
+	{
+		"height": 92.0
+	},
+	"project": "meanjs-interview-manager.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jobresh",
+				"ng-app/app/views/jobs/_results.html"
+			],
+			[
+				"purcha",
+				"public/views/transactions/purchase_credits.html"
+			],
+			[
+				"usersjs",
+				"ng-app/app/scripts/controllers/users.js"
+			],
+			[
+				"transacindex",
+				"public/views/transactions/index.html"
+			],
+			[
+				"transactionsjs",
+				"ng-app/app/scripts/controllers/transactions.js"
+			],
+			[
+				"transactionjs",
+				"ng-app/app/scripts/services/transaction.js"
+			],
+			[
+				"jobresul",
+				"ng-app/app/views/jobs/_results.html"
+			],
+			[
+				"deplo",
+				"config/deploy.rb"
+			],
+			[
+				"bowerjson",
+				"ng-app/bower.json"
+			],
+			[
+				"gemi",
+				"Gemfile"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"deplrb",
+				"config/deploy.rb"
+			],
+			[
+				"gruntf",
+				"ng-app/Gruntfile.js"
+			],
+			[
+				"packajson",
+				"ng-app/package.json"
+			],
+			[
+				"grunt",
+				"ng-app/Gruntfile.js"
+			],
+			[
+				"deplor",
+				"config/deploy.rb"
+			],
+			[
+				"gruntfi",
+				"ng-app/Gruntfile.js"
+			],
+			[
+				"deplr",
+				"config/deploy.rb"
+			],
+			[
+				"userr",
+				"app/models/user.rb"
+			],
+			[
+				"modeluser",
+				"app/models/user.rb"
+			],
+			[
+				"jobsjs",
+				"ng-app/app/scripts/controllers/jobs.js"
+			],
+			[
+				"indexhtm",
+				"ng-app/app/index.html"
+			],
+			[
+				"apphtml",
+				"ng-app/app/views/users/_profile_positions.html"
+			],
+			[
+				"candprhtml",
+				"ng-app/app/views/users/_candidate_profile.html"
+			],
+			[
+				"comprohtml",
+				"ng-app/app/views/users/_company_profile.html"
+			],
+			[
+				"routesjs",
+				"ng-app/app/scripts/routes.js"
+			],
+			[
+				"candidhtml",
+				"ng-app/app/views/candidates/index.html"
+			],
+			[
+				"conveindexht",
+				"ng-app/app/views/conversations/index.html"
+			],
+			[
+				"indexhtml",
+				"ng-app/app/index.html"
+			],
+			[
+				"candpr",
+				"ng-app/app/views/users/_candidate_profile.html"
+			],
+			[
+				"jobindexh",
+				"ng-app/app/views/jobs/index.html"
+			],
+			[
+				"jobjbuilde",
+				"app/views/api/jobs/_job.json.jbuilder"
+			],
+			[
+				"jobreshtml",
+				"ng-app/app/views/jobs/_results.html"
+			],
+			[
+				"datepick",
+				"ng-app/app/scripts/directives/datepickerpopup.js"
+			],
+			[
+				"positionhtml",
+				"ng-app/app/views/users/_profile_positions.html"
+			],
+			[
+				"databa",
+				"config/database.yml"
+			],
+			[
+				"jobskill",
+				"app/models/job_skill.rb"
+			],
+			[
+				"jobcontro",
+				"app/controllers/api/jobs_controller.rb"
+			],
+			[
+				"gruntfile",
+				"ng-app/Gruntfile.js"
+			],
+			[
+				"bowerjso",
+				"ng-app/bower.json"
+			],
+			[
+				"commojs",
+				"ng-app/app/scripts/controllers/common.js"
+			],
+			[
+				"conversationsjs",
+				"ng-app/app/scripts/controllers/conversations.js"
+			],
+			[
+				"candidajs",
+				"ng-app/app/scripts/controllers/candidates.js"
+			],
+			[
+				"appjs",
+				"ng-app/app/scripts/application.js"
+			],
+			[
+				"headjs",
+				"ng-app/app/scripts/controllers/header.js"
+			],
+			[
+				"homejs",
+				"ng-app/app/scripts/controllers/home.js"
+			],
+			[
+				"jobjs",
+				"ng-app/app/scripts/services/job.js"
+			],
+			[
+				"jshint",
+				"ng-app/.jshintrc"
+			],
+			[
+				"josjs",
+				"ng-app/bower_components/jquery/src/var/toString.js"
+			],
+			[
+				"capfile",
+				"Capfile"
+			],
+			[
+				"bowerjs",
+				"ng-app/bower.json"
+			],
+			[
+				"jobseah",
+				"ng-app/app/views/jobs/_search.html"
+			],
+			[
+				"candseahtml",
+				"ng-app/app/views/candidates/_search.html"
+			],
+			[
+				"candjs",
+				"ng-app/app/scripts/controllers/candidates.js"
+			],
+			[
+				"skillhtml",
+				"ng-app/app/views/partials/_skills.html"
+			],
+			[
+				"",
+				".ruby-gemset"
+			],
+			[
+				"candshowh",
+				"ng-app/app/views/candidates/show.html"
+			],
+			[
+				"userrb",
+				"app/models/user.rb"
+			],
+			[
+				"candcontrol",
+				"app/controllers/api/candidates_controller.rb"
+			],
+			[
+				"candshowjbuil",
+				"app/views/api/candidates/show.json.jbuilder"
+			],
+			[
+				"comprhtml",
+				"ng-app/app/views/users/_company_profile.html"
+			],
+			[
+				"candidateresu",
+				"ng-app/app/views/candidates/_results.html"
+			],
+			[
+				"jobnewh",
+				"ng-app/app/views/jobs/new.html"
+			],
+			[
+				"comnewh",
+				"ng-app/bower_components/fontawesome/less/fixed-width.less"
+			],
+			[
+				"comindeh",
+				"ng-app/app/views/companies/index.html"
+			],
+			[
+				"sidebhtml",
+				"ng-app/app/views/_sidebar.html"
+			],
+			[
+				"sessnew",
+				"ng-app/app/views/sessions/new.html"
+			],
+			[
+				"sessinde",
+				"ng-app/app/views/sessions/index.html"
+			],
+			[
+				"sessindeh",
+				"ng-app/app/views/sessions/index.html"
+			],
+			[
+				"routejs",
+				"ng-app/app/scripts/routes.js"
+			],
+			[
+				"convshow",
+				"ng-app/app/views/conversations/show.html"
+			],
+			[
+				"convindex",
+				"ng-app/app/views/conversations/index.html"
+			],
+			[
+				"headejs",
+				"ng-app/app/scripts/controllers/header.js"
+			],
+			[
+				"conversatijs",
+				"ng-app/app/scripts/controllers/conversations.js"
+			],
+			[
+				"concontro",
+				"app/controllers/api/conversations_controller.rb"
+			],
+			[
+				"useredihtm",
+				"ng-app/app/views/users/edit.html"
+			],
+			[
+				"edt",
+				"ng-app/app/views/users/edit_profile.html"
+			],
+			[
+				"edhtml",
+				"ng-app/app/views/jobs/edit.html"
+			],
+			[
+				"usernew",
+				"ng-app/app/views/users/new.html"
+			],
+			[
+				"inde",
+				"ng-app/app/index.html"
+			],
+			[
+				"userindeh",
+				"ng-app/app/views/users/index.html"
+			],
+			[
+				"edprohtml",
+				"ng-app/app/views/users/edit_profile.html"
+			],
+			[
+				"profhtml",
+				"ng-app/app/views/users/edit_profile.html"
+			],
+			[
+				"appcss",
+				"ng-app/app/styles/application.scss"
+			],
+			[
+				"edithtml",
+				"ng-app/app/views/jobs/edit.html"
+			],
+			[
+				"sidebarhtml",
+				"ng-app/app/views/_sidebar.html"
+			],
+			[
+				"seidehtml",
+				"ng-app/app/views/sessions/index.html"
+			],
+			[
+				"jobsho",
+				"ng-app/app/views/jobs/show.html"
+			],
+			[
+				"jobresu",
+				"ng-app/app/views/jobs/_results.html"
+			],
+			[
+				"jobindeh",
+				"ng-app/app/views/jobs/index.html"
+			],
+			[
+				"newhtm",
+				"ng-app/app/views/jobs/new.html"
+			],
+			[
+				"showhtml",
+				"ng-app/app/views/candidates/show.html"
+			],
+			[
+				"jobforhtm",
+				"ng-app/app/views/jobs/_form.html"
+			],
+			[
+				"jobformht",
+				"ng-app/app/views/jobs/_form.html"
+			],
+			[
+				"sfteam",
+				"ng-app/app/views/users/_sf_team.html"
+			],
+			[
+				"jobfohtml",
+				"ng-app/app/views/jobs/_form.html"
+			],
+			[
+				"jobindehtm",
+				"ng-app/app/views/jobs/index.html"
+			],
+			[
+				"candidatesindex",
+				"ng-app/app/views/candidates/index.html"
+			],
+			[
+				"candindexh",
+				"ng-app/bower_components/angular-truncate/demo/index.html"
+			],
+			[
+				"seahtm",
+				"ng-app/app/views/candidates/_search.html"
+			],
+			[
+				"jobhtml",
+				"ng-app/app/views/jobs/index.html"
+			],
+			[
+				"sessindex",
+				"ng-app/app/views/sessions/index.html"
+			],
+			[
+				"usersindeh",
+				"ng-app/app/views/users/index.html"
+			],
+			[
+				"homehtml",
+				"ng-app/app/views/home.html"
+			],
+			[
+				"comhome",
+				"ng-app/app/views/_company_home.html"
+			],
+			[
+				"candhome",
+				"ng-app/app/views/_candidate_home.html"
+			],
+			[
+				"publhom",
+				"ng-app/app/views/_public_home.html"
+			],
+			[
+				"homehm",
+				"ng-app/app/views/home.html"
+			],
+			[
+				"comhomeh",
+				"ng-app/app/views/_company_home.html"
+			],
+			[
+				"stilecss",
+				"ng-app/app/styles/stilearn/stilearn.scss"
+			],
+			[
+				"sideh",
+				"ng-app/app/views/_sidebar.html"
+			],
+			[
+				"jobindex",
+				"ng-app/app/views/jobs/index.html"
+			],
+			[
+				"aeprohtml",
+				"ng-app/app/views/partials/_ae_products.html"
+			],
+			[
+				"users",
+				"ng-app/app/scripts/controllers/users.js"
+			],
+			[
+				"skill",
+				"ng-app/app/views/partials/_skills.html"
+			],
+			[
+				"candsearhh",
+				"ng-app/app/views/candidates/_search.html"
+			],
+			[
+				"jobsea",
+				"ng-app/app/views/jobs/_search.html"
+			],
+			[
+				"candsearh",
+				"ng-app/app/views/candidates/_search.html"
+			],
+			[
+				"comprofhtml",
+				"ng-app/app/views/users/_company_profile.html"
+			],
+			[
+				"jobforhtml",
+				"ng-app/app/views/jobs/_form.html"
+			],
+			[
+				"jobseahh",
+				"ng-app/app/views/jobs/_search.html"
+			],
+			[
+				"sftehtm",
+				"ng-app/app/views/users/_sf_team.html"
+			],
+			[
+				"aechtml",
+				"ng-app/app/views/partials/_ae_products.html"
+			],
+			[
+				"comprtml",
+				"ng-app/app/views/users/_company_profile.html"
+			],
+			[
+				"depende",
+				"ng-app/app/styles/stilearn/dependencies.scss"
+			],
+			[
+				"candprohtml",
+				"ng-app/app/views/users/_candidate_profile.html"
+			],
+			[
+				"compro",
+				"ng-app/app/views/users/_company_profile.html"
+			],
+			[
+				"appscss",
+				"ng-app/app/styles/application.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"foun",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"founde",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"omnitc",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnic",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnico",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"dev toke a",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev demo",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"omni ral",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"founders",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"foundersh",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"founder",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"foundershi",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"stilearn",
+				"~/code/stilearn/stilearn.sublime-project"
+			],
+			[
+				"omni",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"foundershie",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"omn ira",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omni ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"tp",
+				"~/code/tp/tp.sublime-project"
+			],
+			[
+				"omnira",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"stilea",
+				"~/code/tp/ng-app/app/styles/stilearn.sublime-workspace"
+			],
+			[
+				"dev to",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"devtokau",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev tok a",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev toke ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev tok",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"omni rai",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnicra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"foudner",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnitc ",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omn rai",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnicop",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"foudn",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"ng toke",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"fonder",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"dev de",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev tok dem",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"devi tok ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev tok au dem",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"omn ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"om rai",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omni rail",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omin",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omni ",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnit ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omn rails",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"dev tok au ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"ngtoke",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ngtokea",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ngotk ",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"dev ro",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev toke",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"ngtoken",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ngto",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ng an",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ng token ",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ng test",
+				"~/code/ng_test/ng_test.sublime-workspace"
+			],
+			[
+				"devi tok a",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev to a",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev to au dem",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"ng token au",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"dev dem",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"devise",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"om ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnir ",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"nh",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"auth demo",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev top",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"ng tok au",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"devi ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"dev",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"nt token ",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"dev to de",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"stilear",
+				"~/code/stilearn/stilearn.sublime-project"
+			],
+			[
+				"ng tok",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ngtok",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"omn",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"rails",
+				"~/code/rails-4-angular-sorcery/rails-4-angular-sorcery.sublime-workspace"
+			],
+			[
+				"ng tok ",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ng toke a",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"dev tok au",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"demo",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"foud",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"omm",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omn rail",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omni c",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"stiles",
+				"~/code/stilearn/stilearn.sublime-project"
+			],
+			[
+				"stile",
+				"~/code/stilearn/stilearn.sublime-project"
+			],
+			[
+				"omnica",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"ngtoka",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"omn r",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnic ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omin ra",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnicp",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"omnicos",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"devi toke ",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"devi to",
+				"~/code/devise_token_auth_demo/devise_token_auth_demo.sublime-project"
+			],
+			[
+				"rail",
+				"~/code/omnicost-rails/omnicost-rails.sublime-project"
+			],
+			[
+				"foudene",
+				"~/code/foundershield/foundershield.sublime-project"
+			],
+			[
+				"ng",
+				"~/code/ng-token-auth/ng-token-auth.sublime-project"
+			],
+			[
+				"ra",
+				"~/code/rails-4-angular-sorcery/rails-4-angular-sorcery.sublime-project"
+			],
+			[
+				"sorce",
+				"~/code/rails-4-angular-sorcery/rails-4-angular-sorcery.sublime-project"
+			],
+			[
+				"what",
+				"~/code/whatshappening_api/whatshappeningapi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+		],
+		"width": 442.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
