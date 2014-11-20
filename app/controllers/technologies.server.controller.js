@@ -5,14 +5,14 @@
  */
 var mongoose = require('mongoose'),
 	errorHandler = require('./errors.server.controller'),
-	Techonology = mongoose.model('Techonology'),
+	Technology = mongoose.model('Technology'),
 	_ = require('lodash');
 
 /**
  * Create a technology
  */
 exports.create = function(req, res) {
-	var technology = new Techonology(req.body);
+	var technology = new Technology(req.body);
 	technology.user = req.user;
 
 	technology.save(function(err) {

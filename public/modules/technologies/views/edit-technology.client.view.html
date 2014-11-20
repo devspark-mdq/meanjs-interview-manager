@@ -1,0 +1,35 @@
+<section data-ng-controller="TechnologiesController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1>Edit Article</h1>
+	</div>
+	<div class="col-md-12">
+		<form name="technologyForm" class="form-horizontal" data-ng-submit="update(technologyForm.$valid)" novalidate>
+			<fieldset>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.title.$invalid}">
+					<label class="control-label" for="title">Title</label>
+					<div class="controls">
+						<input name="title" type="text" data-ng-model="technology.title" id="title" class="form-control" placeholder="Title" required>
+					</div>
+					<div ng-show="submitted && technologyForm.title.$invalid" class="help-block">
+						<p ng-show="technologyForm.title.$error.required" class="text-danger">Title is required</p>
+					</div>
+				</div>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.content.$invalid}">
+					<label class="control-label" for="content">Content</label>
+					<div class="controls">
+						<textarea name="content" data-ng-model="technology.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content" required></textarea>
+					</div>
+					<div ng-show="submitted && technologyForm.content.$invalid" class="help-block">
+						<p ng-show="technologyForm.content.$error.required" class="text-danger">Content is required</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Update" class="btn btn-default">
+				</div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</section>
