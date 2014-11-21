@@ -6,14 +6,14 @@ angular.module('technologies').controller('TechnologiesController', ['$scope', '
 
 		$scope.create = function() {
 			var technology = new Technologies({
-				title: this.title,
-				content: this.content
+				name: this.name,
+				description: this.description
 			});
 			technology.$save(function(response) {
 				$location.path('technologies/' + response._id);
 
-				$scope.title = '';
-				$scope.content = '';
+				$scope.name = '';
+				$scope.description = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

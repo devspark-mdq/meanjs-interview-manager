@@ -5,22 +5,22 @@
 	<div class="col-md-12">
 		<form name="technologyForm" class="form-horizontal" data-ng-submit="update(technologyForm.$valid)" novalidate>
 			<fieldset>
-				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.title.$invalid}">
-					<label class="control-label" for="title">Title</label>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.name.$invalid}">
+					<label class="control-label" for="name">Name</label>
 					<div class="controls">
-						<input name="title" type="text" data-ng-model="technology.title" id="title" class="form-control" placeholder="Title" required>
+						<input name="name" type="text" data-ng-model="technology.name" id="name" class="form-control" placeholder="Name" required>
 					</div>
-					<div ng-show="submitted && technologyForm.title.$invalid" class="help-block">
-						<p ng-show="technologyForm.title.$error.required" class="text-danger">Title is required</p>
+					<div ng-show="submitted && technologyForm.name.$invalid" class="help-block">
+						<p ng-show="technologyForm.name.$error.required" class="text-danger">Name is required</p>
 					</div>
 				</div>
-				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.content.$invalid}">
-					<label class="control-label" for="content">Content</label>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && technologyForm.description.$invalid}">
+					<label class="control-label" for="content">Description</label>
 					<div class="controls">
-						<textarea name="content" data-ng-model="technology.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content" required></textarea>
+						<textarea name="description" data-ng-model="technology.description" id="description" class="form-control" cols="30" rows="10" placeholder="Content" required></textarea>
 					</div>
-					<div ng-show="submitted && technologyForm.content.$invalid" class="help-block">
-						<p ng-show="technologyForm.content.$error.required" class="text-danger">Content is required</p>
+					<div ng-show="submitted && technologyForm.description.$invalid" class="help-block">
+						<p ng-show="technologyForm.description.$error.required" class="text-danger">Description is required</p>
 					</div>
 				</div>
 				<div class="form-group">

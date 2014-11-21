@@ -29,14 +29,14 @@ exports.create = function(req, res) {
 /**
  * Show the current technology
  */
-exports.read = function(req, res) {
+exports.read = function(req, res) {console.log(req.technology);
 	res.json(req.technology);
 };
 
 /**
  * Update a technology
  */
-exports.update = function(req, res) {
+exports.update = function(req, res) {console.log(req.technology);
 	var technology = req.technology;
 
 	technology = _.extend(technology, req.body);
@@ -70,10 +70,10 @@ exports.delete = function(req, res) {
 };
 
 /**
- * List of Techonologys
+ * List of Technologys
  */
 exports.list = function(req, res) {
-	Techonology.find().sort('-created').populate('user', 'displayName').exec(function(err, technologys) {
+	Technology.find().sort('-created').populate('user', 'displayName').exec(function(err, technologys) {
 		if (err) {
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
@@ -88,7 +88,7 @@ exports.list = function(req, res) {
  * Techonology middleware
  */
 exports.technologyByID = function(req, res, next, id) {
-	Techonology.findById(id).populate('user', 'displayName').exec(function(err, technology) {
+	Technology.findById(id).populate('user', 'displayName').exec(function(err, technology) {
 		if (err) return next(err);
 		if (!technology) return next(new Error('Failed to load technology ' + id));
 		req.technology = technology;
@@ -97,10 +97,12 @@ exports.technologyByID = function(req, res, next, id) {
 };
 
 /**
- * Techonology authorization middleware
+ * Technology authorization middleware
  */
 exports.hasAuthorization = function(req, res, next) {
-	if (req.technology.user.id !== req.user.id) {
+
+//	Nothing to validate yet
+	if (false) {
 		return res.status(403).send({
 			message: 'User is not authorized'
 		});

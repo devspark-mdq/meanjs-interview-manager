@@ -37,10 +37,12 @@ var TechnologySchema = new Schema({
 		trim: true
 	},
 	tags : {
-		type: [String]
+		type: [String],
+		default: []
 	},
 	questions: {
-		type: [QuestionSchema]
+		type: [QuestionSchema],
+		default: []
 	}
 });
 
