@@ -3,6 +3,7 @@
 angular.module('technologies').controller('TechnologiesController', ['Questions','$scope', '$stateParams', '$location', 'Authentication', 'Technologies',
 	function(Questions, $scope, $stateParams, $location, Authentication, Technologies) {
 		$scope.authentication = Authentication;
+		$scope.questions = [];
 
 		$scope.create = function() {
 			var technology = new Technologies({
@@ -58,6 +59,15 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 			$scope.questions = Questions.query({
 				technologyId: $stateParams.technologyId
 				});
+		};
+
+		$scope.addQuestion = function(){
+			$scope.questions.push({});
+		};
+
+		$scope.removeQuestion = function(question){
+      var index = $scope.questions.indexOf(question);
+			$scope.questions.splice(index, 1);
 		};
 	}
 ]);
