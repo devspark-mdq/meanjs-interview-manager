@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
 /**
  * Create a Question
  */
-exports.create = function(req, res,technologyId) {
+exports.create = function(req, res) {
 	var question = new Question(req.body);
 	question.user = req.user;
 
