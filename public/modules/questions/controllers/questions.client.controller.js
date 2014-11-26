@@ -11,10 +11,9 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			var question = new Questions ({
 				name: this.name
 			});
-
 			// Redirect after save
 			question.$save(function(response) {
-				$location.path('questions/' + response._id);
+				$location.path('/technologies/:technologyId/questions/' + response._id);
 
 				// Clear form fields
 				$scope.name = '';
@@ -45,7 +44,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			var question = $scope.question;
 
 			question.$update(function() {
-				$location.path('questions/' + question._id);
+				$location.path('/technologies/:technologyId/questions/' + response._id);
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

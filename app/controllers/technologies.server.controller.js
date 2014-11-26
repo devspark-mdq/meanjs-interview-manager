@@ -109,3 +109,11 @@ exports.hasAuthorization = function(req, res, next) {
 	}
 	next();
 };
+exports.addQuestion = function(req, res, question,next,idTechnology) {
+	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
+		if (err) return next(err);
+		if (!technology) return next(new Error('Failed to load technology ' + idTechnology));
+		technology.questions.add(question);
+		next();
+	});
+};

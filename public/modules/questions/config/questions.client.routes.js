@@ -6,7 +6,7 @@ angular.module('questions').config(['$stateProvider',
 		// Questions state routing
 		$stateProvider.
 		state('listQuestions', {
-			url: '/questions',
+			url: '/technologies/:technologyId/questions',
 			templateUrl: 'modules/questions/views/list-questions.client.view.html'
 		}).
 		state('createQuestion', {
@@ -14,11 +14,11 @@ angular.module('questions').config(['$stateProvider',
 			templateUrl: 'modules/questions/views/create-question.client.view.html'
 		}).
 		state('viewQuestion', {
-			url: '/questions/:questionId',
+			url: '/technologies/:technologyId/questions/:questionId',
 			templateUrl: 'modules/questions/views/view-question.client.view.html'
 		}).
 		state('editQuestion', {
-			url: '/questions/:questionId/edit',
+			url: '/technologies/:technologyId/questions/:questionId/edit',
 			templateUrl: 'modules/questions/views/edit-question.client.view.html'
 		});
 	}

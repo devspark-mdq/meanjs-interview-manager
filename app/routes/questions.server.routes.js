@@ -6,11 +6,11 @@ module.exports = function(app) {
 	var technologies=require('../../app/controllers/technologies.server.controller');
 
 	// Questions Routes
-	app.route('/:technologyId/questions')
+	app.route('/technologies/:technologyId/questions')
 		.get(questions.list)
 		.post(users.requiresLogin, questions.create);
 
-	app.route('/:technologyId/questions/:questionId')
+	app.route('/technologies/:technologyId/questions/:questionId')
 		.get(questions.read)
 		.put(users.requiresLogin, questions.hasAuthorization, questions.update)
 		.delete(users.requiresLogin, questions.hasAuthorization, questions.delete);

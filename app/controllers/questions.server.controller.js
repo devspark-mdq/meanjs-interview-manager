@@ -12,10 +12,10 @@ var mongoose = require('mongoose'),
 /**
  * Create a Question
  */
-exports.create = function(req, res,technologyId) {
+exports.create = function(req, res) {
 	var question = new Question(req.body);
 	question.user = req.user;
-
+console.log(req);
 	question.save(function(err) {
 		if (err) {
 			return res.status(400).send({
