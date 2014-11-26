@@ -9,6 +9,9 @@
 		<a tooltip="Remove" class="btn btn-primary" data-ng-click="remove();">
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
+		<a tooltip="Add question" class="btn btn-primary" ng-href="/#!/technologies/{{technology._id}}/questions/create">
+			<i class="glyphicon glyphicon-plus"></i>
+		</a>
 	</div>
 	<p class="lead" data-ng-bind="technology.description"></p>
 </section>

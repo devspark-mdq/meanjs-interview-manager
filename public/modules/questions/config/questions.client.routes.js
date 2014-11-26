@@ -10,7 +10,7 @@ angular.module('questions').config(['$stateProvider',
 			templateUrl: 'modules/questions/views/list-questions.client.view.html'
 		}).
 		state('createQuestion', {
-			url: '/questions/create',
+			url: '/technologies/:technologyId/questions/create',
 			templateUrl: 'modules/questions/views/create-question.client.view.html'
 		}).
 		state('viewQuestion', {
