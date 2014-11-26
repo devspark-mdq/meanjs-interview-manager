@@ -9,11 +9,12 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		$scope.create = function() {
 			// Create new Question object
 			var question = new Questions ({
-				name: this.name
+				name: this.name,
+				technologyId:$stateParams.technologyId
 			});
 			// Redirect after save
 			question.$save(function(response) {
-				$location.path('/technologies/:technologyId/questions/' + response._id);
+				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + response._id);
 
 				// Clear form fields
 				$scope.name = '';
@@ -44,7 +45,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			var question = $scope.question;
 
 			question.$update(function() {
-				$location.path('/technologies/:technologyId/questions/' + response._id);
+				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + question._id);
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
@@ -57,7 +58,8 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Find existing Question
 		$scope.findOne = function() {
-			$scope.question = Questions.get({ 
+			$scope.question = Questions.get({
+				technologyId: $stateParams.technologyId,
 				questionId: $stateParams.questionId
 			});
 		};

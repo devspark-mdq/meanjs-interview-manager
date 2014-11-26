@@ -20,6 +20,11 @@ var QuestionSchema = new Schema({
 		required: 'Please fill Question name',
 		trim: true
 	},
+	technologyId: {
+		type: String,
+		default: 'DefaultTechId'
+	},
+	
 	created: {
 		type: Date,
 		default: Date.now

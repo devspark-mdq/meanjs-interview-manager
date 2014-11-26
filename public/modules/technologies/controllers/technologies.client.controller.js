@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('technologies').controller('TechnologiesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Technologies',
-	function($scope, $stateParams, $location, Authentication, Technologies) {
+angular.module('technologies').controller('TechnologiesController', ['Questions','$scope', '$stateParams', '$location', 'Authentication', 'Technologies',
+	function(Questions, $scope, $stateParams, $location, Authentication, Technologies) {
 		$scope.authentication = Authentication;
 
 		$scope.create = function() {
@@ -53,6 +53,11 @@ angular.module('technologies').controller('TechnologiesController', ['$scope', '
 			$scope.technology = Technologies.get({
 				technologyId: $stateParams.technologyId
 			});
+		};
+		$scope.findQuestions = function() {
+			$scope.questions = Questions.query({
+				technologyId: $stateParams.technologyId
+				});
 		};
 	}
 ]);
