@@ -9,15 +9,12 @@
 		<a tooltip="Remove" class="btn btn-primary" data-ng-click="remove();">
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
-		<a tooltip="Add question" class="btn btn-primary" ng-href="/#!/technologies/{{technology._id}}/questions/create">
-			<i class="glyphicon glyphicon-plus"></i>
-		</a>
 	</div>
 
 	<p class="lead" data-ng-bind="technology.description"></p>
-	<section data-ng-init="findQuestions()">
+	<section>
 		<div class="list-group">
-        	<a data-ng-repeat="question in questions" data-ng-href="#!/technologies/{{technology._id}}/questions/{{question._id}}" class="list-group-item">
+        	<a data-ng-repeat="question in technology.questions" data-ng-href="#!/technologies/{{technology._id}}/questions/{{question._id}}" class="list-group-item">
 				<small class="list-group-item-text">
 					Posted on
 					<span data-ng-bind="question.created | date:'medium'"></span>
@@ -25,5 +22,8 @@
 				<h4 class="list-group-item-heading" data-ng-bind="question.name"></h4>
         	</a>
 	    </div>
+	    <a tooltip="Add question" class="btn btn-primary" ng-href="/#!/technologies/{{technology._id}}/questions/create">
+			<i class="glyphicon glyphicon-plus"></i> Add question
+		</a>
 	</section>
 </section>

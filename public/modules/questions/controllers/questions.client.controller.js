@@ -10,12 +10,11 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			// Create new Question object
 			var question = new Questions ({
 				name: this.name,
-				technologyId:$stateParams.technologyId
+				technologyId: $stateParams.technologyId
 			});
 			// Redirect after save
 			question.$save(function(response) {
-				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + response._id);
-
+				$location.path('/technologies/' + $stateParams.technologyId);
 				// Clear form fields
 				$scope.name = '';
 			}, function(errorResponse) {
@@ -25,7 +24,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Remove existing Question
 		$scope.remove = function(question) {
-			if ( question ) { 
+			if ( question ) {
 				question.$remove();
 
 				for (var i in $scope.questions) {
@@ -43,9 +42,9 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		// Update existing Question
 		$scope.update = function() {
 			var question = $scope.question;
-
-			question.$update(function() {
-				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + question._id);
+//
+			Questions.update( { technologyId: $stateParams.technologyId}, $scope.question ,function(  ) {
+				$location.path('/technologies/' + $stateParams.technologyId);
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
@@ -58,10 +57,14 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Find existing Question
 		$scope.findOne = function() {
+			$scope.technology_id = $stateParams.technologyId;
+			console.log($scope.technology_id);
+
 			$scope.question = Questions.get({
 				technologyId: $stateParams.technologyId,
 				questionId: $stateParams.questionId
 			});
+
 		};
 	}
 ]);

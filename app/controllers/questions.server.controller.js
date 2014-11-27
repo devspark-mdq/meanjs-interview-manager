@@ -13,17 +13,16 @@ var mongoose = require('mongoose'),
  * Create a Question
  */
 exports.create = function(req, res) {
-
 	var question = new Question(req.body);
 	question.user = req.user;
 
 	Technology.findById(req.body.technologyId, function (err, doc){
-  		
+
   		if (!err){
 
   			question._id = mongoose.Types.ObjectId();
   			doc.questions.push(question);
-		
+
 			doc.save(function(err) {
 				if (err) {
 					return res.status(400).send({
@@ -34,7 +33,7 @@ exports.create = function(req, res) {
 				}
 			});
   		}
-  		
+
   		else{
 
 			return res.status(400).send({
@@ -92,27 +91,23 @@ exports.delete = function(req, res) {
 /**
  * List of Questions
  */
-exports.list = function(req, res) { 
-	Question.find().sort('-created').populate('user', 'displayName').exec(function(err, questions) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(questions);
-		}
+exports.list = function(req, res) {
+	Technology.findById(req.technology.id).populate('user', 'displayName').exec(function(err, technology) {
+		if (err) return next(err);
+		if (!technology) return next(new Error('Failed to load technology ' + id));
+		req.questions = technology.questions;
+
+		next();
 	});
+
 };
 
 /**
  * Question middleware
  */
-exports.questionByID = function(req, res, next, id) { 
-
+exports.questionByID = function(req, res, next, id) {
 	_.each(req.technology.questions, function(question){
-
-		if (question._id == id){
-
+		if (question.id === id){
 			req.question = question;
 			next();
 		}
