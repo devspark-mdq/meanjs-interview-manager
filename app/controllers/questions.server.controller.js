@@ -13,23 +13,43 @@ var mongoose = require('mongoose'),
  * Create a Question
  */
 exports.create = function(req, res) {
+
 	var question = new Question(req.body);
 	question.user = req.user;
-	question.save(function(err) {
-		if (err) {
+
+	Technology.findById(req.body.technologyId, function (err, doc){
+  		
+  		if (!err){
+
+  			question._id = mongoose.Types.ObjectId();
+  			doc.questions.push(question);
+		
+			doc.save(function(err) {
+				if (err) {
+					return res.status(400).send({
+						message: errorHandler.getErrorMessage(err)
+					});
+				} else {
+					res.jsonp(question);
+				}
+			});
+  		}
+  		
+  		else{
+
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
 			});
-		} else {
-			res.jsonp(question);
-		}
+  		}
 	});
+
 };
 
 /**
  * Show the current Question
  */
 exports.read = function(req, res) {
+
 	res.jsonp(req.question);
 };
 
@@ -88,12 +108,17 @@ exports.list = function(req, res) {
  * Question middleware
  */
 exports.questionByID = function(req, res, next, id) { 
-	Question.findById(id).populate('user', 'displayName').exec(function(err, question) {
-		if (err) return next(err);
-		if (! question) return next(new Error('Failed to load Question ' + id));
-		req.question = question ;
-		next();
+
+	_.each(req.technology.questions, function(question){
+
+		if (question._id == id){
+
+			req.question = question;
+			next();
+		}
 	});
+
+	return next(new Error('Failed to load Question ' + id));
 };
 
 /**

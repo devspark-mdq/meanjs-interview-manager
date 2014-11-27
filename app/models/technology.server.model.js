@@ -14,21 +14,24 @@ var mongoose = require('mongoose'),
  * Question Schema
  */
 var QuestionSchema = new Schema({
+	
 	name: {
 		type: String,
 		default: '',
 		required: 'Please fill Question name',
 		trim: true
 	},
-	technologyId: {
-		type: String,
-		default: 'DefaultTechId'
-	},
-	
 	created: {
 		type: Date,
 		default: Date.now
-	}
+	}/*,
+	type: {
+
+		type: String,
+		enum: ['single', 'multiple', 'keyword'],
+		default: 'single'
+	}*/
+
 });
 
 mongoose.model('Question', QuestionSchema);
