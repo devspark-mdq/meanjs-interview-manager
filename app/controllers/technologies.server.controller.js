@@ -12,6 +12,7 @@ var mongoose = require('mongoose'),
  * Create a technology
  */
 exports.create = function(req, res) {
+	console.log(req.body);
 	var technology = new Technology(req.body);
 	technology.user = req.user;
 

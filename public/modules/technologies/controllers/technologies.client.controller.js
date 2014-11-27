@@ -5,12 +5,16 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 		$scope.authentication = Authentication;
 		$scope.questions = [];
 
-		$scope.create = function() {
-			var technology = new Technologies({
-				name: this.name,
-				description: this.description
+		if($stateParams.technologyId){
+			$scope.technology = Technologies.get({
+				technologyId: $stateParams.technologyId
 			});
-			technology.$save(function(response) {
+		}else{
+			$scope.technology = new Technologies();
+		}
+
+		$scope.create = function() {
+			$scope.technology.$save(function(response) {
 				$location.path('technologies/' + response._id);
 
 				$scope.name = '';
@@ -50,11 +54,7 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 			$scope.technologies = Technologies.query();
 		};
 
-		$scope.findOne = function() {
-			$scope.technology = Technologies.get({
-				technologyId: $stateParams.technologyId
-			});
-		};
+
 		$scope.findQuestions = function() {
 			$scope.questions = Questions.query({
 				technologyId: $stateParams.technologyId
