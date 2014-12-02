@@ -93,15 +93,8 @@ exports.delete = function(req, res) {
  * List of Questions
  */
 exports.list = function(req, res) { 
-	Question.find().sort('-created').populate('user', 'displayName').exec(function(err, questions) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(questions);
-		}
-	});
+
+	res.jsonp(req.technology.questions);
 };
 
 /**
