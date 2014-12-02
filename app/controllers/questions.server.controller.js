@@ -109,6 +109,14 @@ exports.list = function(req, res) {
  */
 exports.questionByID = function(req, res, next, id) { 
 
+	req.technology.questions.findById(id).exec(function(err, article) {
+		if (err) return next(err);
+		if (! question) return next(new Error('Failed to load question ' + id));
+		
+		req.question = question;
+		next();
+	});	
+/*
 	_.each(req.technology.questions, function(question){
 
 		if (question._id == id){
@@ -118,7 +126,7 @@ exports.questionByID = function(req, res, next, id) {
 		}
 	});
 
-	return next(new Error('Failed to load Question ' + id));
+	return next(new Error('Failed to load Question ' + id));*/
 };
 
 /**
