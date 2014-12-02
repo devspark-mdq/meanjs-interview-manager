@@ -14,7 +14,7 @@ var mongoose = require('mongoose'),
  * Question Schema
  */
 var QuestionSchema = new Schema({
-	
+
 	name: {
 		type: String,
 		default: '',
@@ -24,13 +24,13 @@ var QuestionSchema = new Schema({
 	created: {
 		type: Date,
 		default: Date.now
-	}/*,
+	},
 	type: {
 
 		type: String,
 		enum: ['single', 'multiple', 'keyword'],
 		default: 'single'
-	}*/
+	}
 
 });
 
