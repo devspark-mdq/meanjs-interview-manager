@@ -109,24 +109,12 @@ exports.list = function(req, res) {
  */
 exports.questionByID = function(req, res, next, id) { 
 
-	req.technology.questions.findById(id).exec(function(err, article) {
-		if (err) return next(err);
-		if (! question) return next(new Error('Failed to load question ' + id));
+	var question = req.technology.questions.id(id);
+
+	if (! question) return next(new Error('Failed to load question ' + id));
 		
-		req.question = question;
-		next();
-	});	
-/*
-	_.each(req.technology.questions, function(question){
-
-		if (question._id == id){
-
-			req.question = question;
-			next();
-		}
-	});
-
-	return next(new Error('Failed to load Question ' + id));*/
+	req.question = question;
+	next();
 };
 
 /**
