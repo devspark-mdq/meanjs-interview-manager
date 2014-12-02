@@ -5,20 +5,25 @@ angular.module('questions').config(['$stateProvider',
 	function($stateProvider) {
 		// Questions state routing
 		$stateProvider.
-		state('listQuestions', {
+		state('questions', {
 			url: '/technologies/:technologyId/questions',
+			abstract: true,
+			template: '<ui-view/>'
+		}).
+		state('questions.index', {
+			url: '/index',
 			templateUrl: 'modules/questions/views/list-questions.client.view.html'
 		}).
-		state('createQuestion', {
-			url: '/technologies/:technologyId/questions/create',
+		state('questions.create', {
+			url: '/create',
 			templateUrl: 'modules/questions/views/create-question.client.view.html'
 		}).
-		state('viewQuestion', {
-			url: '/technologies/:technologyId/questions/:questionId',
+		state('questions.view', {
+			url: '/:questionId',
 			templateUrl: 'modules/questions/views/view-question.client.view.html'
 		}).
-		state('editQuestion', {
-			url: '/technologies/:technologyId/questions/:questionId/edit',
+		state('questions.edit', {
+			url: '/:questionId/edit',
 			templateUrl: 'modules/questions/views/edit-question.client.view.html'
 		});
 	}

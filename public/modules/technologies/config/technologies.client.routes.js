@@ -5,20 +5,26 @@ angular.module('technologies').config(['$stateProvider',
 	function($stateProvider) {
 		// Technologys state routing
 		$stateProvider.
-		state('listTechnologies', {
+		state('technologies', {
 			url: '/technologies',
+			abstract: true,
+			template: '<ui-view/>'
+		}).
+
+		state('technologies.index', {
+			url: '/index',
 			templateUrl: 'modules/technologies/views/list-technologies.client.view.html'
 		}).
-		state('createTechnology', {
-			url: '/technologies/create',
+		state('technologies.new', {
+			url: '/create',
 			templateUrl: 'modules/technologies/views/create-technology.client.view.html'
 		}).
-		state('viewTechnology', {
-			url: '/technologies/:technologyId',
+		state('technologies.view', {
+			url: '/:technologyId',
 			templateUrl: 'modules/technologies/views/view-technology.client.view.html'
 		}).
-		state('editTechnology', {
-			url: '/technologies/:technologyId/edit',
+		state('technologies.edit', {
+			url: '/:technologyId/edit',
 			templateUrl: 'modules/technologies/views/edit-technology.client.view.html'
 		});
 	}
