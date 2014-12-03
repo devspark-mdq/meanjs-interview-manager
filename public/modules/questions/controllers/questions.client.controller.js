@@ -14,7 +14,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			});
 			// Redirect after save
 			question.$save(function(response) {
-				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + response._id);
+				$location.path('/technologies/' + $stateParams.technologyId);
 
 				// Clear form fields
 				$scope.name = '';
@@ -34,8 +34,8 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 					}
 				}
 			} else {
-				$scope.question.$remove(function() {
-					$location.path('questions');
+				$scope.question.$remove({technologyId:$stateParams.technologyId},function() {
+					$location.path('/technologies/' + $stateParams.technologyId);
 				});
 			}
 		};
@@ -43,8 +43,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		// Update existing Question
 		$scope.update = function() {
 			var question = $scope.question;
-
-			question.$update(function() {
+			question.$update({technologyId:$stateParams.technologyId}, function() {
 				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + question._id);
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
@@ -62,6 +61,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				technologyId: $stateParams.technologyId,
 				questionId: $stateParams.questionId
 			});
+			$scope.technology= $stateParams.technologyId;
 		};
 	}
 ]);

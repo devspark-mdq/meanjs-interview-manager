@@ -119,3 +119,32 @@ exports.addQuestion = function(req, res, question,next,idTechnology) {
 		next();
 	});
 };
+exports.editQuestion = function(req,res,question,idTechnology){
+	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
+		var q =technology.questions.id(question._id);
+		q.name = question.name;
+		technology.save(function(err) {
+			if (err) {				
+				return res.status(400).send({
+					message: errorHandler.getErrorMessage(err)
+				});
+			} else {
+				res.json(q);
+				}
+		});
+	});
+};
+exports.removeQuestion = function(req,res,question,idTechnology){
+	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
+		technology.questions.id(question._id).remove();
+		technology.save(function(err) {
+			if (err) {				
+				return res.status(400).send({
+					message: errorHandler.getErrorMessage(err)
+				});
+			} else {
+				res.json(question);
+				}
+		});
+	});
+};

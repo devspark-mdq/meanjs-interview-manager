@@ -5,6 +5,7 @@
  */
 var mongoose = require('mongoose'),
 	errorHandler = require('./errors.server.controller'),
+	technologies = require('./technologies.server.controller'),
 	Question = mongoose.model('Question'),
 	Technology = mongoose.model('Technology'),
 	_ = require('lodash');
@@ -56,20 +57,11 @@ exports.read = function(req, res) {
 /**
  * Update a Question
  */
-exports.update = function(req, res) {
-	var question = req.question ;
+exports.update = function(req, res,next) {
+	var question = req.question;
 
 	question = _.extend(question , req.body);
-
-	question.save(function(err) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(question);
-		}
-	});
+	technologies.editQuestion(req,res,question,req.technology._id,next);
 };
 
 /**
@@ -78,15 +70,7 @@ exports.update = function(req, res) {
 exports.delete = function(req, res) {
 	var question = req.question ;
 
-	question.remove(function(err) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(question);
-		}
-	});
+	technologies.removeQuestion(req,res,question,req.technology._id);
 };
 
 /**
@@ -119,3 +103,4 @@ exports.hasAuthorization = function(req, res, next) {
 	}
 	next();
 };
+
