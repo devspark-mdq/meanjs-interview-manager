@@ -57,6 +57,13 @@
     <p ng-hide="questions.length">No questions added yet</p> -->
 
     <div class="form-group">
+        <label class="control-label" for="tags">Description</label>
+        <div class="controls">
+            <tags-input ng-model="technology.tags" name="tags" id="tags"></tags-input>
+        </div>
+    </div>
+
+    <div class="form-group">
         <input type="submit" class="btn btn-primary">
     </div>
 

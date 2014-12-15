@@ -1,6 +1,9 @@
 <section data-ng-controller="TechnologiesController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="technology.name"></h1>
+		<span data-ng-repeat="tag in technology.tags" class="label label-default our_tags">
+			{{tag}}
+    	</span>			
 	</div>
 	<div class="pull-right">
 		<a tooltip="Edit" class="btn btn-primary" href="/#!/technologies/{{technology._id}}/edit">

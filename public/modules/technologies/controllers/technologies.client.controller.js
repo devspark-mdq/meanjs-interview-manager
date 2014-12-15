@@ -4,6 +4,7 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 	function(Questions, $scope, $stateParams, $location, Authentication, Technologies) {
 		$scope.authentication = Authentication;
 		$scope.questions = [];
+		//$scope.tags = [];
 
 		if($stateParams.technologyId){
 			$scope.technology = Technologies.get({
@@ -14,6 +15,15 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 		}
 
 		$scope.create = function() {
+
+			var tagsAux = new Array();
+
+			angular.forEach($scope.technology.tags, function(elem){
+
+				tagsAux.push(elem.text) ;
+			});
+			$scope.technology.tags = tagsAux;
+			
 			$scope.technology.$save(function(response) {
 				$location.path('technologies/' + response._id);
 
@@ -41,6 +51,16 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 		};
 
 		$scope.update = function() {
+
+			var tagsAux = new Array();
+
+			angular.forEach($scope.technology.tags, function(elem){
+
+				tagsAux.push(elem.text) ;
+			});
+			
+			$scope.technology.tags = tagsAux;
+
 			var technology = $scope.technology;
 
 			technology.$update(function() {
