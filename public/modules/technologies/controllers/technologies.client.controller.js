@@ -16,7 +16,7 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 
 		$scope.create = function() {
 
-			var tagsAux = new Array();
+			var tagsAux = [];
 
 			angular.forEach($scope.technology.tags, function(elem){
 
