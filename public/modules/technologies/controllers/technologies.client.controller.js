@@ -80,14 +80,5 @@ angular.module('technologies').controller('TechnologiesController', ['Questions'
 				technologyId: $stateParams.technologyId
 				});
 		};
-
-		$scope.addQuestion = function(){
-			$scope.questions.push({});
-		};
-
-		$scope.removeQuestion = function(question){
-      var index = $scope.questions.indexOf(question);
-			$scope.questions.splice(index, 1);
-		};
 	}
 ]);

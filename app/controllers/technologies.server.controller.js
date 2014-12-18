@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
  * Create a technology
  */
 exports.create = function(req, res) {
-	console.log(req.body);
+
 	var technology = new Technology(req.body);
 	technology.user = req.user;
 
@@ -31,14 +31,16 @@ exports.create = function(req, res) {
 /**
  * Show the current technology
  */
-exports.read = function(req, res) {console.log(req.technology);
+exports.read = function(req, res) {
 	res.json(req.technology);
 };
 
 /**
  * Update a technology
  */
-exports.update = function(req, res) {console.log(req.technology);
+exports.update = function(req, res) {
+
+
 	var technology = req.technology;
 
 	technology = _.extend(technology, req.body);
@@ -111,6 +113,7 @@ exports.hasAuthorization = function(req, res, next) {
 	}
 	next();
 };
+
 exports.addQuestion = function(req, res, question,next,idTechnology) {
 	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
 		if (err) return next(err);
@@ -119,10 +122,18 @@ exports.addQuestion = function(req, res, question,next,idTechnology) {
 		next();
 	});
 };
+
 exports.editQuestion = function(req,res,question,idTechnology){
+
 	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
-		var q =technology.questions.id(question._id);
+		
+		var q = technology.questions.id(question._id);
+		
 		q.name = question.name;
+		q.type = question.type;
+		q.difficulty = question.difficulty;
+		q.keywords = question.keywords;
+
 		technology.save(function(err) {
 			if (err) {				
 				return res.status(400).send({
@@ -134,6 +145,7 @@ exports.editQuestion = function(req,res,question,idTechnology){
 		});
 	});
 };
+
 exports.removeQuestion = function(req,res,question,idTechnology){
 	Technology.findById(idTechnology).populate('user', 'displayName').exec(function(err, technology) {
 		technology.questions.id(question._id).remove();

@@ -3,21 +3,26 @@
 // Questions controller
 angular.module('questions').controller('QuestionsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Questions',
 	function($scope, $stateParams, $location, Authentication, Questions) {
-		$scope.authentication = Authentication;
 
+		$scope.question = {answers: []};
+
+		$scope.authentication = Authentication;
 		// Create new Question
-		$scope.create = function() {
+		$scope.create = function() {			
 			// Create new Question object
+
 			var question = new Questions ({
-				name: this.name,
-				technologyId:$stateParams.technologyId
+				name: $scope.question.name,
+				technologyId: $stateParams.technologyId,
+				type: $scope.question.type,
+				difficulty: $scope.question.difficulty,
+				keywords: $scope.question.keywords,
+				answers: []
 			});
 			// Redirect after save
+
 			question.$save(function(response) {
 				$location.path('/technologies/' + $stateParams.technologyId);
-
-				// Clear form fields
-				$scope.name = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
@@ -25,8 +30,8 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Remove existing Question
 		$scope.remove = function(question) {
-			if ( question ) { 
-				question.$remove();
+			if ( $scope.question ) { 
+				$scope.question.$remove();
 
 				for (var i in $scope.questions) {
 					if ($scope.questions [i] === question) {
@@ -42,7 +47,24 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Update existing Question
 		$scope.update = function() {
-			var question = $scope.question;
+
+			var tagsAux = [];
+
+			angular.forEach($scope.question.keywords, function(elem){
+
+				tagsAux.push(elem.text) ;
+			});
+
+			var question = new Questions ({
+				_id: $stateParams.questionId,
+				name: $scope.question.name,
+				technologyId: $stateParams.technologyId,
+				type: $scope.question.type,
+				difficulty: $scope.question.difficulty,
+				keywords: tagsAux,
+				answers: []
+			});	
+					
 			question.$update({technologyId:$stateParams.technologyId}, function() {
 				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + question._id);
 			}, function(errorResponse) {
@@ -62,6 +84,15 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				questionId: $stateParams.questionId
 			});
 			$scope.technology= $stateParams.technologyId;
+		};
+
+		$scope.addAnswer = function(){
+				$scope.question.answers.push({});
+		};
+
+		$scope.removeAnswer = function(answer){
+	        var index = $scope.question.answers.indexOf(answer);
+			$scope.question.answers.splice(index, 1);
 		};
 	}
 ]);

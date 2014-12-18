@@ -1,0 +1,48 @@
+<div class="form-group">
+    <label class="control-label" for="name">Name</label>
+    <div class="controls">
+        <input type="text" data-ng-model="question.name" id="name" class="form-control" placeholder="Name" required>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="" class="control-label">Difficulty</label>
+    <select ng-model="question.difficulty">
+        <option value="basic">Basic</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="high">High</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="" class="control-label">Type</label>
+    <select ng-model="question.type">
+        <option value="single">Single choice</option>
+        <option value="multiple">Multiple choice</option>
+        <option value="keyword">Keyword</option>
+    </select>
+</div>
+
+<div ng-if="question.type === 'single' || question.type === 'multiple'">
+    <div class="row" ng-repeat="answer in question.answers">
+        <div class="col-md-2 text-right">
+            <input type="checkbox" name="answers" ng-if="question.type === 'multiple'" ng-model="answer.isItRight"/>
+            <input type="radio" name="answers" ng-if="question.type === 'single'" ng-model="answer.isItRight"/>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-if="question.type === 'single' || question.type === 'multiple'" ng-model="answer.text"/>
+            <a href="" ng-click="removeAnswer(answer)">Remove answer</a>
+        </div>
+    </div>
+    <a href="" ng-click="addAnswer()" class="btn btn-default"> Add answer </a>
+</div>
+
+<div ng-if="question.type === 'keyword'">
+    <tags-input ng-model="question.keywords" name="keywords" id="keywords"></tags-input>
+</div>
+<br><br>
+<div class="form-group">
+    <input type="submit" class="btn btn-default">
+</div>
+<div data-ng-show="error" class="text-danger">
+	<strong data-ng-bind="error"></strong>
+</div>

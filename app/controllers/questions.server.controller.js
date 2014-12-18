@@ -57,11 +57,13 @@ exports.read = function(req, res) {
 /**
  * Update a Question
  */
-exports.update = function(req, res,next) {
+exports.update = function(req, res, next) {
+
 	var question = req.question;
 
 	question = _.extend(question , req.body);
-	technologies.editQuestion(req,res,question,req.technology._id,next);
+
+	technologies.editQuestion(req, res, question, req.technology._id, next);
 };
 
 /**

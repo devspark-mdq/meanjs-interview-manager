@@ -78,7 +78,7 @@ var QuestionSchema = new Schema({
 		default: []
 	}, 
 
-	questions: {
+	answers: {
 		type: [AnswerSchema],
 		default: []
 	}
