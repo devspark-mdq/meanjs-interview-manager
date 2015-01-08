@@ -2,6 +2,7 @@
 	<div class="page-header">
 		<h1 data-ng-bind="question.name"></h1>
 	</div>
+
 	<div class="pull-right">
 		<a class="btn btn-primary" href="/#!/technologies/{{technology}}/questions/{{question._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
@@ -10,19 +11,26 @@
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
 	</div>
-	<small>
-		<em class="text-muted">
-			Posted on
-			<span data-ng-bind="question.created | date:'mediumDate'"></span>
-		</em>
-		
-	</small>
+
 	<div>
 		Type:
 		<span data-ng-bind="question.type"></span>
 	</div>
+
 	<div>
 		Difficulty:
 		<span data-ng-bind="question.difficulty"></span>
+	</div>
+
+	<div>
+		Answers:
+		<ul>
+			<li ng-repeat="answer in question.answers">
+				{{answer.text}} [
+				<span ng-if="answer.isItRight === true">Right Answer</span>
+				<span ng-if="answer.isItRight === false">Wrong Answer</span>
+				]
+			</li>
+		</ul>
 	</div>
 </section>
