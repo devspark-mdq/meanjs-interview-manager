@@ -21,11 +21,20 @@
 	<section data-ng-init="findQuestions()">
 		<div class="list-group">
         	<a data-ng-repeat="question in questions" data-ng-href="#!/technologies/{{technology._id}}/questions/{{question._id}}" class="list-group-item">
-				<small class="list-group-item-text">
-					Posted on
-					<span data-ng-bind="question.created | date:'medium'"></span>
-				</small>
+
 				<h4 class="list-group-item-heading" data-ng-bind="question.name"></h4>
+
+				<div>
+				Answers:
+				<ul>
+					<li ng-repeat="answer in question.answers">
+						{{answer.text}} [
+						<span ng-if="answer.isItRight === true">Right Answer</span>
+						<span ng-if="answer.isItRight === false">Wrong Answer</span>
+						]
+					</li>
+				</ul>
+	</div>
         	</a>
 	    </div>
 	</section>
