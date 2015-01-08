@@ -90,11 +90,14 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		};
 
 		$scope.removeAnswer = function(answer){
-	        console.log($scope.question.answers);
-	        console.log(answer);
 	        var index = $scope.question.answers.indexOf(answer);
 			$scope.question.answers.splice(index, 1);
-			console.log($scope.question.answers);
+		};
+		$scope.clickRadio=function(answer){
+				angular.forEach($scope.question.answers, function(elem){
+					elem.isItRight=false;
+				});
+				answer.isItRight=true;
 		};
 	}
 ]);
