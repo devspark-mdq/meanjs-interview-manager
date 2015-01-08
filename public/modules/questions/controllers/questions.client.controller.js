@@ -7,26 +7,6 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		$scope.question = {answers: []};
 
 		$scope.authentication = Authentication;
-		// Create new Question
-		$scope.create = function() {			
-			// Create new Question object
-
-			var question = new Questions ({
-				name: $scope.question.name,
-				technologyId: $stateParams.technologyId,
-				type: $scope.question.type,
-				difficulty: $scope.question.difficulty,
-				keywords: $scope.question.keywords,
-				answers:  $scope.question.answers
-			});
-			// Redirect after save
-
-			question.$save(function(response) {
-				$location.path('/technologies/' + $stateParams.technologyId);
-			}, function(errorResponse) {
-				$scope.error = errorResponse.data.message;
-			});
-		};
 
 		// Remove existing Question
 		$scope.remove = function(question) {
@@ -45,15 +25,67 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 			}
 		};
 
+		$scope.validateRadios = function() {
+			var flag = false;
+			angular.forEach($scope.question.answers, function(elem){
+				if(elem.isItRight) flag = true;
+			});			
+			return flag;
+		};
+
+		// Create new Question
+		$scope.create = function() {			
+			var tagsAux = [];
+			if($scope.question.type==='keyword'){
+				angular.forEach($scope.question.keywords, function(elem){
+					tagsAux.push(elem.text);
+				});
+			}	
+			else if($scope.question.type === 'single' || $scope.question.type==='multiple' ){
+					if (!$scope.validateRadios()){
+						alert("You must mark one answer as true");
+						return;
+					}
+			}
+			// Create new Question object
+			var question = new Questions ({
+				name: $scope.question.name,
+				technologyId: $stateParams.technologyId,
+				type: $scope.question.type,
+				difficulty: $scope.question.difficulty,
+				keywords: $scope.question.keywords,
+				answers:  $scope.question.answers
+			});
+			// Redirect after save
+
+			question.$save(function(response) {
+				$location.path('/technologies/' + $stateParams.technologyId);
+			}, function(errorResponse) {
+				$scope.error = errorResponse.data.message;
+			});
+		};
+
 		// Update existing Question
 		$scope.update = function() {
 			var tagsAux = [];
-		if($scope.question.type==='keyword'){
-			angular.forEach($scope.question.keywords, function(elem){
-
-				tagsAux.push(elem.text);
-			});
+			if($scope.question.type==='keyword'){
+				if  ($scope.question.keywords.length===0 ){
+					alert("You must insert at least 1 keyword");
+					return;
+				}
+				else{
+					angular.forEach($scope.question.keywords, function(elem){
+						tagsAux.push(elem.text);
+					});
+				}
 			}
+			else if($scope.question.type === 'single' || $scope.question.type==='multiple' ){
+				if ( !$scope.validateRadios() ){
+					alert("You must mark one answer as true");
+					return;
+				}
+			}
+
 			var question = new Questions ({
 				_id: $stateParams.questionId,
 				name: $scope.question.name,
