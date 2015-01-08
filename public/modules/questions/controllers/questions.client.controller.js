@@ -17,7 +17,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				type: $scope.question.type,
 				difficulty: $scope.question.difficulty,
 				keywords: $scope.question.keywords,
-				answers: []
+				answers:  $scope.question.answers
 			});
 			// Redirect after save
 
@@ -47,14 +47,13 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Update existing Question
 		$scope.update = function() {
-
 			var tagsAux = [];
-
+		if($scope.question.type==='keyword'){
 			angular.forEach($scope.question.keywords, function(elem){
 
-				tagsAux.push(elem.text) ;
+				tagsAux.push(elem.text);
 			});
-
+			}
 			var question = new Questions ({
 				_id: $stateParams.questionId,
 				name: $scope.question.name,
@@ -91,8 +90,11 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		};
 
 		$scope.removeAnswer = function(answer){
+	        console.log($scope.question.answers);
+	        console.log(answer);
 	        var index = $scope.question.answers.indexOf(answer);
 			$scope.question.answers.splice(index, 1);
+			console.log($scope.question.answers);
 		};
 	}
 ]);

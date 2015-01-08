@@ -133,6 +133,7 @@ exports.editQuestion = function(req,res,question,idTechnology){
 		q.type = question.type;
 		q.difficulty = question.difficulty;
 		q.keywords = question.keywords;
+		q.answers=question.answers;
 
 		technology.save(function(err) {
 			if (err) {				

@@ -25,8 +25,8 @@
 <div ng-if="question.type === 'single' || question.type === 'multiple'">
     <div class="row" ng-repeat="answer in question.answers">
         <div class="col-md-2 text-right">
-            <input name="answers[]" type="checkbox" name="answers" ng-if="question.type === 'multiple'" ng-model="answer.isItRight"/>
-            <input type="radio" name="answers" ng-if="question.type === 'single'" ng-model="answer.isItRight"/>
+            <input name="answer" type="checkbox" ng-if="question.type === 'multiple'" ng-model="answer.isItRight"/>
+            <input name="answer" type="radio" ng-if="question.type === 'single'" ng-model="answer.isItRight"/>
         </div>
         <div class="col-md-10">
             <input name="answers" type="text" ng-if="question.type === 'single' || question.type === 'multiple'" ng-model="answer.text"/>
