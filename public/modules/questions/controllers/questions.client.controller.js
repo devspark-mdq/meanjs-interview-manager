@@ -62,7 +62,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				type: $scope.question.type,
 				difficulty: $scope.question.difficulty,
 				keywords: tagsAux,
-				answers: []
+				answers: $scope.question.answers
 			});	
 					
 			question.$update({technologyId:$stateParams.technologyId}, function() {
