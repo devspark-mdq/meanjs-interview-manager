@@ -23,7 +23,12 @@ var ExamSchema = new Schema({
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
+	},
+	questions: {
+		type: [Schema.ObjectId],
+		required: true
 	}
+
 });
 
 mongoose.model('Exam', ExamSchema);

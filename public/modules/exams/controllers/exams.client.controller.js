@@ -1,9 +1,13 @@
 'use strict';
 
 // Exams controller
-angular.module('exams').controller('ExamsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Exams',
-	function($scope, $stateParams, $location, Authentication, Exams) {
+angular.module('exams').controller('ExamsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Exams', 'Technologies',
+	function($scope, $stateParams, $location, Authentication, Exams, Technologies) {
 		$scope.authentication = Authentication;
+
+		$scope.technologies = Technologies.query();
+		
+		$scope.selectedQuestions = [];
 
 		// Create new Exam
 		$scope.create = function() {
@@ -61,6 +65,19 @@ angular.module('exams').controller('ExamsController', ['$scope', '$stateParams',
 			$scope.exam = Exams.get({ 
 				examId: $stateParams.examId
 			});
+		};
+
+		$scope.addQuestion = function(question){
+			angular.forEach($scope.selectedQuestions, function(elem){
+				if(question._id === elem){
+					alert("Question already added!");
+					return;
+				}
+			})
+
+			$scope.selectedQuestions.push(question);
+			$scope.exam.questions.push(question);
+
 		};
 	}
 ]);

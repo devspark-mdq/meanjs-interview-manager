@@ -1,6 +1,14 @@
 <section data-ng-controller="ExamsController" data-ng-init="findOne()">
 	<div class="page-header">
 		<h1 data-ng-bind="exam.name"></h1>
+		<small>
+			<em class="text-muted">
+				Created
+				<span data-ng-bind="exam.created | date:'mediumDate'"></span>
+				by
+				<span data-ng-bind="exam.user.displayName"></span>
+			</em>
+		</small>
 	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == exam.user._id))">
 		<a class="btn btn-primary" href="/#!/exams/{{exam._id}}/edit">
@@ -10,12 +18,4 @@
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
 	</div>
-	<small>
-		<em class="text-muted">
-			Posted on
-			<span data-ng-bind="exam.created | date:'mediumDate'"></span>
-			by
-			<span data-ng-bind="exam.user.displayName"></span>
-		</em>
-	</small>
 </section>
