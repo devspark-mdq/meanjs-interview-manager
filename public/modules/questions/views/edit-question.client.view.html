@@ -1,10 +1,17 @@
 <section data-ng-controller="QuestionsController" data-ng-init="findOne()">
     <div class="page-header">
-        <h1>Edit Question</h1>
+        
+        <h1>Edit Question
+        	<a tooltip="Delete Question" class="btn" data-ng-click="remove();">
+				<i class="glyphicon glyphicon-trash"></i>
+			</a>
+		</h1>
+
     </div>
     <div class="col-md-12">
         <form class="form-horizontal" data-ng-submit="update()" novalidate>
             <ng-include src="'/modules/questions/views/_form-question.client.view.html'"></ng-include>
+            
         </form>
     </div>
 </section>

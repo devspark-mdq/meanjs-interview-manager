@@ -10,42 +10,32 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 
 		// Remove existing Question
 		$scope.remove = function(question) {
-			if ( $scope.question ) { 
-				$scope.question.$remove();
-
-				for (var i in $scope.questions) {
-					if ($scope.questions [i] === question) {
-						$scope.questions.splice(i, 1);
-					}
-				}
-			} else {
 				$scope.question.$remove({technologyId:$stateParams.technologyId},function() {
 					$location.path('/technologies/' + $stateParams.technologyId);
 				});
-			}
-		};
-
-		$scope.validateRadios = function() {
-			var flag = false;
-			angular.forEach($scope.question.answers, function(elem){
-				if(elem.isItRight) flag = true;
-			});			
-			return flag;
 		};
 
 		// Create new Question
 		$scope.create = function() {			
 			var tagsAux = [];
 			if($scope.question.type==='keyword'){
-				angular.forEach($scope.question.keywords, function(elem){
-					tagsAux.push(elem.text);
-				});
-			}	
+				if  ($scope.question.keywords.length===0 ){
+					alert('You must insert at least 1 keyword');
+					return;
+				}
+				else{
+
+					angular.forEach($scope.question.keywords, function(elem){
+						console.log(elem.text);
+						tagsAux.push(elem.text);
+					});
+				}
+			}
 			else if($scope.question.type === 'single' || $scope.question.type==='multiple' ){
-					if (!$scope.validateRadios()){
-						alert("You must mark one answer as true");
-						return;
-					}
+				if ( !$scope.validateRadios() ){
+					alert('You must mark one answer as true');
+					return;
+				}
 			}
 			// Create new Question object
 			var question = new Questions ({
@@ -53,7 +43,7 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				technologyId: $stateParams.technologyId,
 				type: $scope.question.type,
 				difficulty: $scope.question.difficulty,
-				keywords: $scope.question.keywords,
+				keywords: tagsAux,
 				answers:  $scope.question.answers
 			});
 			// Redirect after save
@@ -69,8 +59,9 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 		$scope.update = function() {
 			var tagsAux = [];
 			if($scope.question.type==='keyword'){
+				console.log('keyword');
 				if  ($scope.question.keywords.length===0 ){
-					alert("You must insert at least 1 keyword");
+					alert('You must insert at least 1 keyword');
 					return;
 				}
 				else{
@@ -80,8 +71,9 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				}
 			}
 			else if($scope.question.type === 'single' || $scope.question.type==='multiple' ){
+				console.log('single');
 				if ( !$scope.validateRadios() ){
-					alert("You must mark one answer as true");
+					alert('You must mark one answer as true');
 					return;
 				}
 			}
@@ -95,9 +87,9 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 				keywords: tagsAux,
 				answers: $scope.question.answers
 			});	
-					
+				
 			question.$update({technologyId:$stateParams.technologyId}, function() {
-				$location.path('/technologies/' + $stateParams.technologyId + '/questions/' + question._id);
+				$location.path('/technologies/' + $stateParams.technologyId);
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
@@ -130,6 +122,14 @@ angular.module('questions').controller('QuestionsController', ['$scope', '$state
 					elem.isItRight=false;
 				});
 				answer.isItRight=true;
+		};
+
+		$scope.validateRadios = function() {
+			var flag = false;
+			angular.forEach($scope.question.answers, function(elem){
+				if(elem.isItRight) flag = true;
+			});			
+			return flag;
 		};
 	}
 ]);

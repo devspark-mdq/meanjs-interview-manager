@@ -13,7 +13,7 @@
 	<p class="lead" data-ng-bind="technology.description"></p>
 	<section data-ng-init="findQuestions()">
 		<div class="list-group">
-        	<a data-ng-repeat="question in questions" data-ng-href="#!/technologies/{{technology._id}}/questions/{{question._id}}" class="list-group-item">
+        	<a data-ng-repeat="question in questions" data-ng-href="#!/technologies/{{technology._id}}/questions/{{question._id}}/edit" class="list-group-item">
 
 				<h4 class="list-group-item-heading">
 					{{question.name}}
@@ -21,22 +21,28 @@
 					<small>[difficulty: {{question.difficulty}}]</small>
 				</h4>
 
-				<div>
-				Answers:
-				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="answer in question.answers">
-						<span class="glyphicon glyphicon-ok" ng-if="answer.isItRight === true"></span> 
-						<span class="glyphicon glyphicon-remove" ng-if="answer.isItRight === false"></span> 	
-						{{answer.text}}
-					</li>
-				</ul>
-	</div>
+				<div ng-if= "question.type === 'multiple' || question.type === 'single'">
+					Answers:
+					<ul class="list-group">
+						<li class="list-group-item" ng-repeat="answer in question.answers">
+							<span class="glyphicon glyphicon-ok" ng-if="answer.isItRight === true"></span> 
+							<span class="glyphicon glyphicon-remove" ng-if="answer.isItRight === false"></span> 	
+							{{answer.text}}
+						</li>
+					</ul>
+				</div>
+				<div ng-if= "question.type === 'keyword'">
+					Keywords:
+						<span class="label label-warning our_tags" ng-repeat="keyword in question.keywords"> 	
+							{{keyword}}
+						</span>
+				</div>
         	</a>
 	    </div>
 	</section>
 	<section>
-		<a tooltip="Add question" class="btn btn-warning btn-block" ng-href="/#!/technologies/{{technology._id}}/questions/create">
-			<i class="glyphicon glyphicon-arrow-down"></i> Add Question
+		<a class="btn btn-warning btn-block" ng-href="/#!/technologies/{{technology._id}}/questions/create">
+			 Add Question
 		</a>		
 	</section>
 </section>
