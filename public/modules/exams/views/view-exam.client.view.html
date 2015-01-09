@@ -10,6 +10,22 @@
 			<i class="glyphicon glyphicon-trash"></i>
 		</a>
 	</div>
+
+  <p>Technology: {{exam.technology.text}}</p>
+  <div ng-repeat="question in exam.technology.questions">
+    {{question.text}}
+    <ul>
+      <li ng-if="question.type != 'keywords'" ng-repeat="answer in question.answers">
+        {{answer.text}}  
+      </li>
+      <li ng-if="question.type == 'keywords'" ng-repeat="keyword in
+        question.keywords">
+        {{keyword}} 
+      </li>
+    </ul>
+
+  </div>
+
 	<small>
 		<em class="text-muted">
 			Posted on
