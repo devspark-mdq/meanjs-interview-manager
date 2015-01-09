@@ -132,9 +132,12 @@ exports.editQuestion = function(req,res,question,idTechnology){
 		q.name = question.name;
 		q.type = question.type;
 		q.difficulty = question.difficulty;
-		q.keywords = question.keywords;
-		q.answers=question.answers;
-
+		if(question.type==='keyword'){
+				q.keywords = question.keywords;
+			}
+		else{
+				q.answers=question.answers;
+			}
 		technology.save(function(err) {
 			if (err) {				
 				return res.status(400).send({
